@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaguarSystems", "JaguarSystems\JaguarSystems.csproj", "{FCA20468-9BB8-4370-821A-ED7B6898E0BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA20468-9BB8-4370-821A-ED7B6898E0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA20468-9BB8-4370-821A-ED7B6898E0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA20468-9BB8-4370-821A-ED7B6898E0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA20468-9BB8-4370-821A-ED7B6898E0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2784D298-D31C-4C05-8873-11D05413E7CE}
+	EndGlobalSection
+EndGlobal
