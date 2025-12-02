@@ -16,50 +16,65 @@ namespace JaguarSystems.Forms
         public MenuForm()
         {
             InitializeComponent();
-            CargarPermisos();
+            
         }
 
-        private void CargarPermisos()
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+            AplicarPermisos();
+        }
+        private void AplicarPermisos()
         {
             var u = Sesion.UsuarioActual;
 
             // Inventario
-            btnProductos.Enabled = u.InvProductos;
-            btnAlmacenes.Enabled = u.InvAlmacenes;
-            btnUbicaciones.Enabled = u.InvUbicaciones;
-            btnDepartamentos.Enabled = u.InvDepartamentos;
-            btnGrupos.Enabled = u.InvGrupos;
-            btnCotizaciones.Enabled = u.InvCotizaciones;
-            btnCompras.Enabled = u.InvCompras;
-            btnMovimientos.Enabled = u.InvMovimientos;
-            btnDevoluciones.Enabled = u.InvDevoluciones;
-            btnFacturacion.Enabled = u.InvFacturacion;
-            btnConsultas.Enabled = u.InvConsultas;
-            btnReportes.Enabled = u.InvReportes;
+            MantProductos.Enabled = u.InvProductos;
+            MantAlmacenes.Enabled = u.InvAlmacenes;
+            MantUbicaciones.Enabled = u.InvUbicaciones;
+            MantDepartamentos.Enabled = u.InvDepartamentos;
+            MantGrupos.Enabled = u.InvGrupos;
+            ProCotizacion.Enabled = u.InvCotizaciones;
+            ProCompras.Enabled = u.InvCompras;
+            MantTipoMovimiento.Enabled = u.InvMovimientos;
+            ProDevoluciones.Enabled = u.InvDevoluciones;
+            ProFacturacion.Enabled = u.InvFacturacion;
+            btnInvConsultas.Enabled = u.InvConsultas;
+            btnInvReportes.Enabled = u.InvReportes;
 
-            // Cuentas por Cobrar
-            btnClientes.Enabled = u.CxcClientes;
-            btnCobros.Enabled = u.CxcCobros;
+            // CXC
+            MantClientes.Enabled = u.CxcClientes;
+            ConsClientes.Enabled = u.CxcClientes;
+            RepoClientes.Enabled = u.CxcClientes;
+            ProCobro.Enabled = u.CxcCobros;
+            ConsCobros.Enabled = u.CxcCobros;
+            RepoCobros.Enabled = u.CxcCobros;
 
-            // Cuentas por Pagar
-            btnProveedores.Enabled = u.CxpProveedores;
-            btnPagos.Enabled = u.CxpPagos;
+            // CXP
+            MantProveedores.Enabled = u.CxpProveedores;
+            ConsProveedores.Enabled = u.CxpProveedores;
+            RepoProveedores.Enabled = u.CxpProveedores;
+            ProPago.Enabled = u.CxpPagos;
+            ConsPagos.Enabled = u.CxpPagos;
+            RepoPagos.Enabled = u.CxpPagos;
 
             // Configuración
-            btnUsuarios.Enabled = u.ConfUsuario;
-            btnRoles.Enabled = u.ConfRoles;
-            btnEmpresa.Enabled = u.ConfEmpresa;
-            btnMoneda.Enabled = u.ConfMoneda;
-            btnCondicion.Enabled = u.ConfCondicion;
-
-            // Mostrar nombre del usuario logueado
-            lblUsuario.Text = "Usuario: " + u.Nombre;
+            MantUsuario.Enabled = u.ConfUsuario;
+            ConsUsuario.Enabled = u.ConfUsuario;
+            RepoUsuario.Enabled = u.ConfUsuario;
+            MantRoles.Enabled = u.ConfRoles;
+            ConsRoles.Enabled = u.ConfRoles;
+            RepoRoles.Enabled = u.ConfRoles;
+            MantEmpresa.Enabled = u.ConfEmpresa;
+            ConsEmpresa.Enabled = u.ConfEmpresa;
+            RepoEmpresa.Enabled = u.ConfEmpresa;
+            MantMoneda.Enabled = u.ConfMoneda;
+            ConsMoneda.Enabled = u.ConfMoneda;
+            RepoMoneda.Enabled = u.ConfMoneda;
+            MantCondicion.Enabled = u.ConfCondicion;
+            ConsCondicion.Enabled = u.ConfCondicion;
+            RepoCondicion.Enabled = u.ConfCondicion;
         }
-        private void MenuForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void entradasToolStripMenuItem_Click(object sender, EventArgs e)
         {
 

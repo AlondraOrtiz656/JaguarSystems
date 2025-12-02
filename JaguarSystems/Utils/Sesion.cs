@@ -10,5 +10,10 @@ namespace JaguarSystems.Utils
     internal class Sesion
     {
         public static Usuario UsuarioActual { get; set; }
+
+        
+
     }
+
+
 }

@@ -1,5 +1,7 @@
 ﻿using JaguarSystems.Controllers;
+using JaguarSystems.Forms;
 using JaguarSystems.Models;
+using JaguarSystems.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,11 +57,9 @@ namespace JaguarSystems
                 return;
             }
 
-            // Guardar usuario en sesión (si quieres)
-            //Sesion.UsuarioActual = u;
+            Sesion.UsuarioActual = u; // ← Guardamos el usuario para todo el sistema
 
-            // Abrir menú
-            //new MenuForm().Show();
+            new MenuForm().Show();
             this.Hide();
         }
 
