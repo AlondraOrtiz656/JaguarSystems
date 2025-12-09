@@ -107,15 +107,21 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(531, 293);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventarioToolStripMenuItem,
@@ -125,7 +131,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(531, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(474, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -150,7 +156,7 @@
             this.MantGrupos,
             this.MantTipoMovimiento});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // MantProductos
@@ -199,7 +205,7 @@
             this.ProInOutInventario,
             this.ProDevoluciones});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // ProFacturacion
@@ -242,38 +248,38 @@
             this.ConsDevoluciones,
             this.ConsFacturas});
             this.btnInvConsultas.Name = "btnInvConsultas";
-            this.btnInvConsultas.Size = new System.Drawing.Size(180, 22);
+            this.btnInvConsultas.Size = new System.Drawing.Size(161, 22);
             this.btnInvConsultas.Text = "Consultas";
             // 
             // ConsCotizaciones
             // 
             this.ConsCotizaciones.Name = "ConsCotizaciones";
-            this.ConsCotizaciones.Size = new System.Drawing.Size(180, 22);
+            this.ConsCotizaciones.Size = new System.Drawing.Size(160, 22);
             this.ConsCotizaciones.Text = "Cotizaciones";
             // 
             // ConsCompras
             // 
             this.ConsCompras.Name = "ConsCompras";
-            this.ConsCompras.Size = new System.Drawing.Size(180, 22);
+            this.ConsCompras.Size = new System.Drawing.Size(160, 22);
             this.ConsCompras.Text = "Compras";
             // 
             // ConsInOut
             // 
             this.ConsInOut.Name = "ConsInOut";
-            this.ConsInOut.Size = new System.Drawing.Size(180, 22);
+            this.ConsInOut.Size = new System.Drawing.Size(160, 22);
             this.ConsInOut.Text = "Entradas/Salidas";
             this.ConsInOut.Click += new System.EventHandler(this.entradasSalidasToolStripMenuItem_Click);
             // 
             // ConsDevoluciones
             // 
             this.ConsDevoluciones.Name = "ConsDevoluciones";
-            this.ConsDevoluciones.Size = new System.Drawing.Size(180, 22);
+            this.ConsDevoluciones.Size = new System.Drawing.Size(160, 22);
             this.ConsDevoluciones.Text = "Devoluciones";
             // 
             // ConsFacturas
             // 
             this.ConsFacturas.Name = "ConsFacturas";
-            this.ConsFacturas.Size = new System.Drawing.Size(180, 22);
+            this.ConsFacturas.Size = new System.Drawing.Size(160, 22);
             this.ConsFacturas.Text = "Facturas";
             // 
             // btnInvReportes
@@ -286,7 +292,7 @@
             this.RepoFacturas,
             this.RepoMovimientoProdurcto});
             this.btnInvReportes.Name = "btnInvReportes";
-            this.btnInvReportes.Size = new System.Drawing.Size(180, 22);
+            this.btnInvReportes.Size = new System.Drawing.Size(161, 22);
             this.btnInvReportes.Text = "Reportes";
             // 
             // RepoCotizaciones
@@ -508,7 +514,7 @@
             this.MantMoneda,
             this.MantCondicion});
             this.mantenimientosToolStripMenuItem1.Name = "mantenimientosToolStripMenuItem1";
-            this.mantenimientosToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.mantenimientosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.mantenimientosToolStripMenuItem1.Text = "Mantenimientos";
             // 
             // MantUsuario
@@ -557,7 +563,7 @@
             this.ConsMoneda,
             this.ConsCondicion});
             this.consultasToolStripMenuItem2.Name = "consultasToolStripMenuItem2";
-            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(161, 22);
+            this.consultasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem2.Text = "Consultas";
             // 
             // ConsUsuario
@@ -607,7 +613,7 @@
             this.RepoMoneda,
             this.RepoCondicion});
             this.RepoUsuario.Name = "RepoUsuario";
-            this.RepoUsuario.Size = new System.Drawing.Size(161, 22);
+            this.RepoUsuario.Size = new System.Drawing.Size(180, 22);
             this.RepoUsuario.Text = "Reportes";
             // 
             // usuarioToolStripMenuItem2

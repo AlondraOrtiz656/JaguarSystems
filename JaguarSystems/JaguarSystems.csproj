@@ -47,9 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\UsuarioDAO.cs" />
+    <Compile Include="Forms\Inventario\MantProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventario\MantProductos.Designer.cs">
+      <DependentUpon>MantProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,10 +69,14 @@
     <Compile Include="Forms\MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Sesion.cs" />
+    <EmbeddedResource Include="Forms\Inventario\MantProductos.resx">
+      <DependentUpon>MantProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,7 +109,6 @@
     <Folder Include="Forms\Config\" />
     <Folder Include="Forms\CxC\" />
     <Folder Include="Forms\CxP\" />
-    <Folder Include="Forms\Inventario\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
